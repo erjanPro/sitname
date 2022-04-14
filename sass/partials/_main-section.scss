@@ -1,0 +1,27 @@
+.main-section{
+    background: url(../img/bac-bc-img.png) 100% no-repeat;
+    background-size: 100%;
+    background-color: #29606b;
+    background-position: top;
+}
+.section-main{
+    p{
+        @include medium{
+            letter-spacing: 10px;
+        }
+        font-weight:bold;
+        font-size: 41px;
+        line-height: 20px;
+        text-align: center;
+        color: $white;
+        margin: 229px 0 140px;
+        span{
+            display: inline-block;
+            margin: 20px;
+            font-size: 30px;
+        }
+    }
+}
+
+   
+

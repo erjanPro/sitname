@@ -1,0 +1,95 @@
+@mixin medium{
+    @media screen and (max-width: 800px) {
+        @content;
+    }
+}
+@mixin small{
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+
+
+
+
+
+
+
+@mixin col{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    padding: 50px 103px 55px;
+    box-sizing: border-box;
+}
+@mixin title-col {
+    font-size: 29px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    padding-top: 100px;
+}
+@mixin col-info{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+@mixin col-cards {
+    content: '';
+    width: 80px;
+    height: 78.81px;
+}
+@mixin col-cards-1 {
+    top: 30px;
+    background-color: $white;
+    border-radius: 50%;
+    padding: 0px 0px 8px 3px;
+    left: 45%;
+}
+@mixin read-text {
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $white;
+    padding: 0 42px;
+}
+@mixin reads {
+    width: 372px;
+    text-align: center;
+    background-color: #245963;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+@mixin buttons {
+    font-size: 16px;
+    line-height: 26px;  
+    text-transform: uppercase;
+    color: $white; 
+    padding: 5px 18px;
+    margin-bottom: 50px;
+}
+@mixin avatar {
+    content: '';
+    width: 181px;
+    height: 181px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+
+@mixin registres {
+    background: $blue;
+    border: 1px solid #387D89;
+    width: 275px;
+    height: 44px;
+    box-sizing: border-box;
+    
+}
+
+

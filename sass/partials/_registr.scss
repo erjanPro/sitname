@@ -1,0 +1,90 @@
+.footer-section{
+    text-align: center;
+    position: relative;
+    h3{
+        font-size: 29px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF; 
+        margin-top: 50px;   
+        padding-top: 150px; 
+    }
+    p{
+        font-size: 21px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+    }
+}
+.footer-section::before{
+    content: '';
+    width: 54px;
+    height: 49px;
+    background: url(../img/form-icon.png) 50% no-repeat;
+    position: absolute;
+    left: 46%;
+    bottom: 82%;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 25px;
+}
+
+.main-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.fielet-1{
+    @include registres();
+    @include small{
+        width: 100%;
+    }
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.fielet-1::placeholder{
+    color: #387D89;
+}
+.fielet-2{
+    @include registres();
+    @include small{
+        width: 100%;
+    }
+}
+.fielet-2::placeholder{
+    color: #387D89;
+    
+}
+.fielet-3{
+    @include small{
+        width: 100%;
+    }
+    background: $blue;
+    border: 1px solid #387D89;
+    width: 570px;
+    height: 95px;
+    box-sizing: border-box;
+    margin-top: 33px;
+}
+.fielet-3::placeholder{
+    color: #387D89;
+    
+}
+
+.button{
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 50px;
+    padding: 5px 30px;
+    background-color: $blue;
+    border: none;
+    margin-bottom: 106px;
+}

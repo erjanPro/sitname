@@ -1,0 +1,101 @@
+.read-section{
+    h3{
+        font-size: 29px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+        margin-top: 100px;
+    }
+    .read-section-p{
+        font-size: 21px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+
+.main-read{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.read-1{
+    @include reads();
+    @include medium{
+        width: 100%;
+    }
+    margin-right: 42px;
+    border-top: 7px solid $red;
+    p{
+        @include read-text();
+    }
+    a{
+        @include buttons();
+        background-color: $red;
+    }
+}
+
+
+
+
+.read-2{
+    @include reads();
+    @include medium{
+        width: 100%;
+    }
+    margin-right: 42px;
+    border-top: 7px solid $yellow;
+    p{
+        @include read-text();
+    }
+    a{
+        @include buttons();
+        background-color: $yellow;
+    }
+}
+
+
+
+
+.read-3{
+    @include reads();
+    @include medium{
+        width: 100%;
+    }
+    border-top: 7px solid $green;
+    p{
+        @include read-text();
+    }
+    a{
+        @include buttons();
+        background-color: $green;
+        
+    }
+}
+
+
+
+
+
+.read-1::before{
+    @include avatar();
+    background: url(../img/avatar1.png) no-repeat;
+}
+.read-2::before{
+    @include avatar();
+    background: url(../img/avatar2.png) no-repeat;
+}
+.read-3::before{
+    @include avatar();
+    background: url(../img/avatar3.png) no-repeat;
+}

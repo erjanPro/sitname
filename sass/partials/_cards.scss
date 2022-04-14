@@ -1,0 +1,107 @@
+
+
+
+.main-card{
+    display: flex;
+    flex-wrap: wrap
+}
+
+
+
+.card-1{
+    @include col();
+    @include medium{
+        width: 100%;
+    }
+    background-color: $red;
+    h4{
+       @include title-col();
+       @include small{
+           font-size: 20px
+       }
+    }
+    p{
+       @include col-info();
+    }
+}
+
+
+
+
+
+.card-2{
+    @include col();
+    @include medium{
+        width: 100%;
+    }
+    background-color: $yellow;
+    h4{
+        @include title-col();
+        @include small{
+            font-size: 20px
+        }
+    }
+    p{
+        @include col-info();
+    }
+}
+.card-3{
+    @include col();
+    @include medium{
+        width: 100%;
+    }
+     background-color: $green;
+     h4{
+        @include title-col();
+        @include small{
+            font-size: 20px
+        }
+    }
+    p{
+        @include col-info();
+    }  
+}
+.card-4{
+    @include col();
+    @include medium{
+        width: 100%;
+    }
+    background-color: $fielet;
+    h4{
+        @include title-col(); 
+        @include small{
+            font-size: 20px;
+        }
+    }
+    p{
+        @include col-info();
+    }
+}
+
+.card-1::before{
+    @include col-cards();
+    background: url(../img/sms.png) no-repeat;
+    position: absolute;
+    @include col-cards-1();
+}
+
+.card-2::before{
+    @include col-cards();
+    background: url(../img/pensil.png) no-repeat;
+    position: absolute;
+    @include col-cards-1();
+}
+.card-3::before{
+    @include col-cards();
+    background: url(../img/corona.png) no-repeat;
+    position: absolute;
+    @include col-cards-1();
+}
+
+.card-4::before{
+    @include col-cards();
+    background: url(../img/men.png) no-repeat;
+    position: absolute;
+    @include col-cards-1();
+}
+    
